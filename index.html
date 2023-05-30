@@ -46,14 +46,17 @@
 		<p>	
 			<ul>
 					<li>Morning (5am to 12 noon)</li>
+
 					<li>Afternoon (12 noon to 6pm)</li>
+
 					<li>Evening (6pm to 11pm)</li>
+
 					<li>Night (11pm to 5am)</li>
 			</ul>
 		</p>
 	  <img id=""my-pic" src="http://dummyimage.com/300x400" alt="Time of Day Image" class="flexible">
      <footer>
-      <p><small>&copy; 2022-<span id="copyright">year goes here</span> by 
+      <p><small>&copy; 2022-<span id="copyright">2023</span> by 
           Justine Cacho, All Rights Reserved ~ 
           <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
           <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
@@ -61,24 +64,12 @@
     </footer>
   </main>
  <script>
-	/* 
-
-		Create a web page that uses JavaScript to determine the current hour, 
-		and presents a different image, custom message, and color based on 
-		each of the following times of day:
-
-		Morning (5am to 12 noon)
-		Afternoon (12 noon to 6pm)
-		Evening (6pm to 11pm)
-		Night (11pm to 5am)
-
-	*/
 	let myDate = new Date();
 	let myHour = myDate.getHours();
 	let myGreeting = "";
 	let myColor = "";
-	let myPick = "";
-	let myYear = myDate.getFullYear():
+	let myPic = "";
+	let myYear = myDate.getFullYear();
 
 
 	console.log(myHour);
@@ -94,7 +85,7 @@
 		myColor = "green";;
 		myPic = "afternoon.jpg";
 
-	}else if{myHour >= 18 && myHour < 23){
+	}else if(myHour >= 18 && myHour < 23){
 		myGreeting = "Good evening!";
 		myColor = "blue";;
 		myPic = "evening.jpg";
@@ -113,9 +104,6 @@
 	document.getElementById("my-pic").src = myPic;
 
 	document.getElementById("copyright").innerHTML = myYear;
-
-
-
 
 
 
